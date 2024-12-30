@@ -4,6 +4,9 @@
 <html>
 <head>
     <title>User Management Application</title>
+
+    <link rel="stylesheet" type="text/css" href="../body.css">
+
 </head>
 <body>
 <center>
@@ -14,7 +17,7 @@
 </center>
 <div align="center">
     <form method="post">
-        <table border="1" cellpadding="5">
+        <table>
             <caption>
                 <h2>Add New User</h2>
             </caption>
@@ -38,11 +41,12 @@
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" value="Save"/>
+                    <button type="submit">Save</button>
                 </td>
             </tr>
         </table>
     </form>
 </div>
+
 </body>
 </html>

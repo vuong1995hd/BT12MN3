@@ -4,6 +4,7 @@
 <html>
 <head>
   <title>User Management Application</title>
+  <link rel="stylesheet" type="text/css" href="../body.css">
 </head>
 <body>
 <center>
@@ -13,7 +14,7 @@
   </h2>
 </center>
 <div align="center">
-  <table border="1" cellpadding="5">
+  <table>
     <caption><h2>List of Users</h2></caption>
     <tr>
       <th>ID</th>
@@ -28,7 +29,7 @@
         <td><c:out value="${user.name}"/></td>
         <td><c:out value="${user.email}"/></td>
         <td><c:out value="${user.country}"/></td>
-        <td>
+        <td class="actions">
           <a href="/users?action=edit&id=${user.id}">Edit</a>
           <a href="/users?action=delete&id=${user.id}">Delete</a>
         </td>
@@ -36,6 +37,7 @@
     </c:forEach>
   </table>
 </div>
+
 <form action="users" method="post">
   <input type="text" name="country" placeholder="Search by country">
   <input type="hidden" name="action" value="search">
@@ -45,6 +47,7 @@
   <input type="hidden" name="action" value="sort">
   <button type="submit">Sort by Name</button>
 </form>
+
 
 </body>
 </html>
