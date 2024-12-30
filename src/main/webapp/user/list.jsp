@@ -36,5 +36,15 @@
     </c:forEach>
   </table>
 </div>
+<form action="users" method="post">
+  <input type="text" name="country" placeholder="Search by country">
+  <input type="hidden" name="action" value="search">
+  <button type="submit">Search</button>
+</form>
+<form action="users" method="get" style="display: inline;">
+  <input type="hidden" name="action" value="sort">
+  <button type="submit">Sort by Name</button>
+</form>
+
 </body>
 </html>
